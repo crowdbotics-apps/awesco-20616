@@ -40,6 +40,12 @@ export class _Blank extends React.Component {
         }}
         style={this.props.themedStyle.Image_3}
       />
+      <TouchableOpacity onPress={() => this.props.navigation.navigate("")}>
+        <Text style={this.props.themedStyle.Text_5}>
+          Welcome to my World of Fashion
+        </Text>
+      </TouchableOpacity>
+      <Text style={this.props.themedStyle.Text_11}>Sample text content</Text>
     </ImageBackground>
   )
 }
@@ -85,5 +91,66 @@ export default Blank = withStyles(_Blank, theme => ({
     borderRightWidth: 0,
     borderBottomWidth: 0,
     borderRadius: 0
+  },
+  Text_5: {
+    marginLeft: 0,
+    marginRight: 0,
+    marginTop: 5,
+    marginBottom: 7,
+    paddingLeft: 5,
+    paddingRight: 5,
+    paddingTop: 5,
+    paddingBottom: 5,
+    overflow: "visible",
+    alignSelf: "center",
+    fontSize: 12,
+    color: "#a511e4",
+    backgroundColor: "#ffffff",
+    fontStyle: "italic",
+    fontWeight: "bold",
+    borderColor: "#f8240d",
+    borderStyle: "dotted",
+    borderWidth: 0,
+    borderLeftWidth: 0,
+    borderRightWidth: 0,
+    borderTopWidth: 0,
+    borderBottomWidth: 0,
+    borderRadius: 0,
+    textAlign: "center",
+    textAlignVertical: "center",
+    textDecorationLine: "none",
+    textTransform: "none",
+    lineHeight: 10,
+    letterSpacing: 1
+  },
+  Text_11: {
+    marginLeft: 0,
+    marginRight: 0,
+    marginTop: 5,
+    marginBottom: 5,
+    paddingLeft: 5,
+    paddingRight: 5,
+    paddingTop: 5,
+    paddingBottom: 5,
+    overflow: "visible",
+    fontSize: 12,
+    color: "#000000",
+    backgroundColor: "#ffffff",
+    fontStyle: "normal",
+    fontWeight: "normal",
+    borderColor: "#000000",
+    borderStyle: "solid",
+    borderWidth: 0,
+    borderLeftWidth: 0,
+    borderRightWidth: 0,
+    borderTopWidth: 0,
+    borderBottomWidth: 0,
+    borderRadius: 0,
+    textAlign: "left",
+    textAlignVertical: "center",
+    textDecorationLine: "none",
+    textTransform: "none",
+    lineHeight: 12,
+    letterSpacing: 0
   }
 }))
